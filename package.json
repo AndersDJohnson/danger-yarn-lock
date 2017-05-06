@@ -1,0 +1,15 @@
+{
+  "name": "danger-yarn-lock",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "adjohnson916/danger-yarn-lock",
+  "license": "MIT",
+  "scripts": {
+    "danger": "danger"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.4.0",
+    "danger": "^0.18.0",
+    "lodash.includes": "^4.3.0"
+  }
+}
