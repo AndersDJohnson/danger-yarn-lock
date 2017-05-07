@@ -1,7 +1,8 @@
+/* global danger */
 // http://danger.systems/js/tutorials/dependencies.html
 var includes = require('lodash.includes')
 
-function checkYarnLock(callback) {
+function checkYarnLock (callback) {
   callback = callback || function () {}
   return new Promise(function (resolve, reject) {
     danger.git.JSONDiffForFile('package.json')
