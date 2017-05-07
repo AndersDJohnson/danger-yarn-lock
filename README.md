@@ -50,4 +50,8 @@ schedule(function (resolved) {
 })
 ```
 
+## Etc.
+
+If you want to catch this from within npm scripts (e.g. `preinstall`), try [https://github.com/adjohnson916/use-yarn](https://github.com/adjohnson916/use-yarn).
+
 [danger]: http://danger.systems/js/
