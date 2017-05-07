@@ -16,7 +16,7 @@ function checkYarnLock(callback) {
           console.log('hasLockfileChanges', hasLockfileChanges)
           if (!hasLockfileChanges) {
             var message = 'There are "package.json" dependency changes with no "yarn.lock" changes'
-            callback(message)
+            callback(null, message)
             resolve(message)
           } else {
             callback()

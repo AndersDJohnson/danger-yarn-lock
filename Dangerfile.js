@@ -1,7 +1,7 @@
 var checkYarkLock = require('./index')
 
 schedule(function (resolved) {
-  checkYarkLock(function (message) {
+  checkYarkLock(function (err, message) {
     warn(message)
     resolved()
   })
