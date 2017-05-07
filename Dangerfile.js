@@ -1,7 +1,9 @@
+/* global schedule, warn */
 var checkYarkLock = require('./index')
 
 schedule(function (resolved) {
   checkYarkLock(function (err, message) {
+    if (err) throw err
     warn(message)
     resolved()
   })
