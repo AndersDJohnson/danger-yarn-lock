@@ -1,6 +1,7 @@
 {
   "name": "danger-yarn-lock",
   "version": "1.0.0",
+  "description": "Danger check that yarn.lock is updated with package.json dependencies.",
   "main": "index.js",
   "repository": "AndersDJohnson/danger-yarn-lock",
   "license": "MIT",
@@ -11,5 +12,10 @@
     "babel-preset-env": "^1.4.0",
     "danger": "^0.18.0",
     "lodash.includes": "^4.3.0"
-  }
+  },
+  "keywords": [
+    "danger",
+    "yarn",
+    "npm"
+  ]
 }
