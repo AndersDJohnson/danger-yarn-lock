@@ -9,10 +9,10 @@ yarn add -D danger-yarn-lock
 ## Use
 In your `Dangerfile.js`:
 ```js
-var checkYarkLock = require('danger-yarn-lock')
+var checkYarnLock = require('danger-yarn-lock')
 
 schedule(function (resolved) {
-  checkYarkLock(function (message) {
+  checkYarnLock(function (message) {
     warn(message)
     resolved()
   })
@@ -21,10 +21,10 @@ schedule(function (resolved) {
 
 Or with promise:
 ```js
-var checkYarkLock = require('danger-yarn-lock')
+var checkYarnLock = require('danger-yarn-lock')
 
 schedule(function (resolved) {
-  checkYarkLock()
+  checkYarnLock()
     .then(function (message) {
       warn(message)
       resolved()
@@ -34,7 +34,7 @@ schedule(function (resolved) {
 
 Combine with other promises:
 ```js
-var checkYarkLock = require('danger-yarn-lock')
+var checkYarnLock = require('danger-yarn-lock')
 
 var promise = danger.git.JSONDiffForFile('other-file.txt')
   .then(function () {
@@ -42,7 +42,7 @@ var promise = danger.git.JSONDiffForFile('other-file.txt')
   })
 
 schedule(function (resolved) {
-  Promise.all([promise, checkYarkLock()])
+  Promise.all([promise, checkYarnLock()])
     .then(function (results) {
       warn(results[1])
       resolved()
