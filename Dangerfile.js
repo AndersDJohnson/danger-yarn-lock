@@ -1,8 +1,8 @@
 /* global schedule, warn */
-var checkYarkLock = require('./index')
+var checkYarnLock = require('./index')
 
 schedule(function (resolved) {
-  checkYarkLock(function (err, message) {
+  checkYarnLock(function (err, message) {
     if (err) throw err
     warn(message)
     resolved()
@@ -10,7 +10,7 @@ schedule(function (resolved) {
 })
 
 // schedule(function (resolved) {
-//   checkYarkLock()
+//   checkYarnLock()
 //     .then(function (message) {
 //       warn(message)
 //       resolved()
@@ -23,7 +23,7 @@ schedule(function (resolved) {
 //   })
 //
 // schedule(function (resolved) {
-//   Promise.all([promise, checkYarkLock()])
+//   Promise.all([promise, checkYarnLock()])
 //     .then(function (results) {
 //       warn(results[1])
 //       resolved()
