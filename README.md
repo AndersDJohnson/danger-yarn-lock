@@ -12,7 +12,8 @@ In your `Dangerfile.js`:
 var checkYarnLock = require('danger-yarn-lock')
 
 schedule(function (resolved) {
-  checkYarnLock(function (message) {
+  checkYarnLock(function (err, message) {
+    if (err) throw err
     warn(message)
     resolved()
   })
