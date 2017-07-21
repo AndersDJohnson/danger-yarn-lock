@@ -8,10 +8,12 @@
   "scripts": {
     "danger": "danger"
   },
+  "dependencies": {
+    "lodash.includes": "^4.3.0"
+  },
   "devDependencies": {
     "babel-preset-env": "^1.4.0",
-    "danger": "^0.18.0",
-    "lodash.includes": "^4.3.0"
+    "danger": "^0.18.0"
   },
   "keywords": [
     "danger",
