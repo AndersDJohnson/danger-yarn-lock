@@ -1,12 +1,15 @@
 # danger-yarn-lock
 > [Danger] check that yarn.lock is updated with package.json dependencies.
 
+Alternatively, look at `yarn check` or `yarn install --frozen-lockfile`.
+
 ## Install
 ```
 yarn add -D danger-yarn-lock
 ```
 
 ## Use
+
 In your `Dangerfile.js`:
 ```js
 var checkYarnLock = require('danger-yarn-lock')
