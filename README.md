@@ -56,6 +56,10 @@ schedule(function (resolved) {
 
 ## Etc.
 
-If you want to catch this from within npm scripts (e.g. `preinstall`), try [https://github.com/AndersDJohnson/use-yarn](https://github.com/AndersDJohnson/use-yarn).
+If you want to catch this from within npm scripts (e.g. `preinstall`), try [use-yarn](https://github.com/AndersDJohnson/use-yarn).
+
+## Related
+
+* [check-yarn-lock](https://www.npmjs.com/package/check-yarn-lock)
 
 [danger]: http://danger.systems/js/
