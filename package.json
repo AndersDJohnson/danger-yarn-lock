@@ -1,6 +1,6 @@
 {
   "name": "danger-yarn-lock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Danger check that yarn.lock is updated with package.json dependencies.",
   "main": "index.js",
   "repository": "AndersDJohnson/danger-yarn-lock",
@@ -19,5 +19,6 @@
     "danger",
     "yarn",
     "npm"
-  ]
+  ],
+  "author": "Anders D. Johnson (https://andersdjohnson.com)"
 }
